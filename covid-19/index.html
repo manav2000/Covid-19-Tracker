@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css">
+</head>
+
+<body>
+    <div class="search-country">
+        <div class="search-bar">
+            <input type="text" placeholder="Enter Country..." autofocus>
+        </div>
+        <div class="search-button">
+            SEARCH
+        </div>
+    </div>
+    <marquee behavior="scroll" direction="left"><b>Covid-19 Tracker</b></marquee>
+
+    <div class="cards">
+        <div class="total-cases">
+            <p>CONFIRMED:</p>
+            <span id="total-figure">0</span>
+        </div>
+        <div class="deaths">
+            <p>DEATHS:</p>
+            <span id="death-figure">0</span>
+        </div>
+        <div class="recovered">
+            <p>RECOVERED:</p>
+            <span id="recovered-figure">0</span>
+        </div>
+        <div class="active">
+            <p>ACTIVE:</p>
+            <span id="active-figure">0</span>
+        </div>
+    </div>
+    <div class="chart">
+        <div class="stats">
+            <canvas id="myChart" role="img"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

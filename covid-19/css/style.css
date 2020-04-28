@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../background.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100%;
+}
+
+.search-country {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar {
+    border: 1px solid black;
+    height: 40px;
+    width: 350px;
+    background: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 35px;
+    box-shadow: 3px 3px 8px black;
+}
+
+input {
+    width: 90%;
+    outline: none;
+    border: none;
+}
+
+.search-button {
+    height: 40px;
+    background: lightcyan;
+    margin-left: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    width: 80px;
+    font-family: sans-serif;
+    font-weight: bold;
+    box-shadow: 2px 2px 8px black;
+    cursor: pointer;
+}
+
+marquee {
+    color: white;
+    font-size: 20px;
+}
+
+.cards {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.total-cases,
+.deaths,
+.recovered,
+.active {
+    width: 250px;
+    height: 250px;
+    border-radius: 50px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(80, 120, 180, 0.6);
+}
+
+.total-cases:hover,
+.active:hover,
+.recovered:hover,
+.deaths:hover {
+    width: 270px;
+    height: 270px;
+    transition: width 0.3s linear, height 0.3s linear;
+    box-shadow: 5px 3px 10px black;
+}
+
+.total-cases {
+    color: orange;
+}
+
+.deaths {
+    color: red;
+}
+
+.recovered {
+    color: lime;
+}
+
+.active {
+    color: yellow;
+}
+
+#total-figure,
+#death-figure,
+#recovered-figure,
+#active-figure {
+    text-shadow: 2px 2px 2px;
+}
+
+.total-cases p,
+.deaths p,
+.recovered p,
+.active p {
+    flex: 1;
+    padding-top: 40px;
+}
+
+.total-cases span,
+.deaths span,
+.recovered span,
+.active span {
+    flex: 1;
+}
+
+.chart {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.stats {
+    height: auto;
+    width: 70%;
+    margin: auto;
+    border-radius: 40px;
+}
+
+#myChart {
+    height: auto;
+    width: auto;
+    border-radius: 40px;
+}
