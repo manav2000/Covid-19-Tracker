@@ -8,7 +8,7 @@
 body {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../background.jpg');
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     height: 100%;
 }
 
@@ -39,7 +39,7 @@ input {
 
 .search-button {
     height: 40px;
-    background: lightcyan;
+    background: rgb(0, 121, 121);
     margin-left: 15px;
     border-radius: 10px;
     display: flex;
